@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.common.ProfileFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back"
+            android:backgroundTint="@color/white"
+            android:layout_margin="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivProfilePic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/profile_image_placeholder" />
+
+                <RelativeLayout
+                    android:id="@+id/rlTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/ivProfilePic">
+
+                    <TextView
+                        android:id="@+id/tv_name_activity"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:text="Blue Transporation" />
+
+                    <TextView
+                        android:id="@+id/tv_userType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_name_activity"
+                        android:text="Dispatcher" />
+
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/ivEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/editimage" />
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/user_icon"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:enabled="false"
+                android:backgroundTint="@color/white"
+                android:imeOptions="actionNext"
+                android:hint="First Name"
+                android:id="@+id/etName"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/colorPrimaryDark" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/user_icon"
+                android:drawablePadding="5dp"
+                android:hint="Last Name"
+                android:enabled="false"
+                android:singleLine="true"
+                android:backgroundTint="@color/white"
+                android:imeOptions="actionNext"
+                android:id="@+id/etLastName"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/call_pro"
+                android:drawablePadding="5dp"
+                android:hint="Mobile Number"
+                android:enabled="false"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:backgroundTint="@color/white"
+                android:imeOptions="actionNext"
+                android:id="@+id/etPhone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/email"
+                android:drawablePadding="10dp"
+                android:enabled="false"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:backgroundTint="@color/white"
+                android:imeOptions="actionNext"
+                android:id="@+id/etEmail"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/colorPrimaryDark" />
+            <TextView
+                android:layout_below="@+id/ivProfilePic"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/addresss"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:hint="Address"
+                android:id="@+id/etAddress"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/colorPrimaryDark" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOT"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+
+            <EditText
+                android:layout_below="@+id/etDotNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:backgroundTint="@color/white"
+                android:imeOptions="actionDone"
+                android:enabled="false"
+                android:layout_marginLeft="5dp"
+                android:hint="Dot Number"
+                android:id="@+id/edtName"/>
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/bt_save"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_blue_solid"
+                android:text="Save"
+                android:visibility="gone"
+                android:layout_marginBottom="30dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

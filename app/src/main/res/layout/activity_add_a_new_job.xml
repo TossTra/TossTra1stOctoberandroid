@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.driver.AddANewJobFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <ImageView
+            android:id="@+id/iv_back_addJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back"
+            android:backgroundTint="@color/white"
+            android:layout_margin="15dp"/>
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Add Job"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/job_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate"
+
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/llper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_below="@+id/job_info"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvPerHours"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_left_solid"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Per Hours"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:id="@+id/tvPerLoad"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/rounded_right_stroke"
+                    android:padding="10dp"
+                    android:text="Per Load" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llper"
+                android:layout_marginTop="15dp"
+                android:hint="Amount"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:background="@null"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/vl1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/et_amount"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:id="@+id/tvPickAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vl1"
+                android:layout_marginTop="15dp"
+                android:text="Pick up Address"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/et_street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPickAddress"
+                android:layout_marginTop="15dp"
+                android:hint="Select Pickup Address"
+                android:editable="false"
+                android:imeOptions="actionNext"
+                android:background="@null"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/vl2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/et_street"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+
+           <!-- <EditText
+                android:id="@+id/et_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl2"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:hint="City......"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+
+            <View
+                android:id="@+id/vl3"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/et_city"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+
+
+            <EditText
+                android:id="@+id/et_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl3"
+                android:layout_marginTop="15dp"
+                android:hint="State......"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:background="@null"
+                android:textSize="16sp" />
+
+
+            <View
+                android:id="@+id/vl5"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/et_state"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line"
+                android:textSize="16sp" />
+-->
+            <EditText
+                android:id="@+id/et_zip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl2"
+                android:layout_marginTop="15dp"
+                android:hint="Zip......"
+                android:visibility="gone"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:background="@null"
+                android:textSize="16sp" />
+
+
+            <View
+                android:id="@+id/vl4"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:layout_below="@+id/et_zip"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:id="@+id/tvDropAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vl4"
+                android:layout_marginTop="15dp"
+                android:text="Drop Off Address"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/et_dropAddval1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDropAddress"
+                android:layout_marginTop="15dp"
+                android:hint="Select Drop Off Address"
+                android:background="@null"
+                android:imeOptions="actionNext"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/vl6"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/et_dropAddval1"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+
+            <!--<EditText
+                android:id="@+id/et_cityDrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl6"
+                android:layout_marginTop="15dp"
+                android:hint="City......"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:background="@null"
+                android:textSize="16sp" />
+
+
+            <View
+                android:id="@+id/vl7"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/et_cityDrop"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+
+
+            <EditText
+                android:id="@+id/et_stateDrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl7"
+                android:layout_marginTop="15dp"
+                android:hint="State......"
+                android:background="@null"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+
+            <View
+                android:id="@+id/vl8"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/et_stateDrop"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+-->
+            <EditText
+                android:id="@+id/et_zipDrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl6"
+                android:layout_marginTop="15dp"
+                android:hint="Zip......"
+                android:visibility="gone"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:background="@null"
+                android:textSize="16sp" />
+
+
+            <View
+                android:id="@+id/vl9"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/et_zipDrop"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:background="@color/view_line" />
+
+            <LinearLayout
+                android:id="@+id/llm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl9"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="Start From" />
+                <TextView
+                    android:id="@+id/tvDateStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="____________"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="To" />
+                <TextView
+                    android:id="@+id/tvDateEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="____________"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/vl10"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/llm"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llTime"
+                android:layout_below="@+id/vl10"
+                android:layout_marginTop="15dp"
+                android:weightSum="4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Start Time"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tvTimeStart"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="____________"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="End Time"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_EndTime"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="____________"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/vl11"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/llTime"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:id="@+id/tvAdditionInstruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl11"
+                android:layout_marginTop="15dp"
+                android:text="Additional Instruction"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_end"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/tvAdditionInstruction"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rect_sq_grey">
+
+                <EditText
+                    android:id="@+id/et_add_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                   android:background="@null"
+                    android:paddingVertical="5dp"
+                    android:gravity="top"
+                    android:hint="Additional Instruction ..."
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_end"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rounded_blue_solid"
+                    android:gravity="center"
+                    android:text="Send"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

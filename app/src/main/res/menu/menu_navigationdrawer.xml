@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/activetrucks"
+            android:icon="@mipmap/truck"
+            android:title="Available Trucks" />
+        <item
+            android:id="@+id/addjob"
+            android:icon="@mipmap/truck"
+            android:title="Add Job" />
+        <item
+            android:id="@+id/activedrivers"
+            android:icon="@mipmap/truck"
+            android:title="Active Drivers" />
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@mipmap/whiteprofile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/notification"
+            android:icon="@mipmap/notificationwhite"
+            android:title="Notification" />
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@mipmap/settingwhite"
+            android:title="Settings" />
+
+
+
+
+
+    </group>
+
+
+</menu>

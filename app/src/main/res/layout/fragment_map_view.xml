@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <com.app.tosstra.activities.PagerContainer
+            android:id="@+id/pager_container4"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_above="@+id/rl_offline"
+            android:layout_gravity="bottom"
+            android:clipToPadding="true"
+            android:visibility="visible">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:clipChildren="true"
+                android:clipToPadding="true" />
+        </com.app.tosstra.activities.PagerContainer>
+
+    </RelativeLayout>
+
+
+</fragment>

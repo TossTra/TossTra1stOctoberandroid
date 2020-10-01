@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.JobDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back"
+            android:backgroundTint="@color/white"
+            android:layout_margin="15dp"/>
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Job Details"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/job_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Information"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/job_info"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:text="Company Name....    "
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tvCompanyValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/job_info"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/tvCompanyName"
+                android:text="Blue Transporation"
+                android:textColor="@android:color/black" />
+
+            <View
+                android:id="@+id/vl1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tvCompanyValue"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/date_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl1"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:text="Date From"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/dateStartVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl1"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/date_from"
+                android:text="04 July....."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/date_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl1"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/dateStartVal"
+                android:text="To"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/dateToVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl1"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/date_to"
+                android:text=""
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/vl2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/dateStartVal"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimaryDark" />
+
+
+            <TextView
+                android:id="@+id/time_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl2"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:text="Start Time"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/startTimetVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl2"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/time_from"
+                android:text=""
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/time_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl2"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/startTimetVal"
+                android:text="End Time"
+                android:layout_marginLeft="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tomeToVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl2"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/time_to"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/vl3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tomeToVal"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/tvPickAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vl3"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:text="Pick up Address" />
+
+            <TextView
+                android:id="@+id/tvPickAddval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPickAddress"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:text="indistrial area, mohali(punjab) 160062"
+                android:textColor="@color/colorPrimary" />
+
+            <View
+                android:id="@+id/vl4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tvPickAddval"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/tvDropAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vl4"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:text="Drop Off Address" />
+
+            <TextView
+                android:id="@+id/tvDropAddval"
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDropAddress"
+                android:layout_marginTop="15dp"
+                android:text="indistrial area, sangaria(punjab) 335063"
+                android:textColor="@color/colorPrimary" />
+
+            <View
+                android:id="@+id/vl5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tvDropAddval"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/tvDriverInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl5"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:text="Driver Information"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tvDriverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDriverInfo"
+                android:layout_marginTop="15dp"
+                android:text="Name......"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tvDriverNameVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDriverInfo"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/tvDriverName"
+                android:text="Johnson"
+                android:textSize="16sp"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/vl6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tvDriverNameVal"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/tvDriverEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl6"
+                android:layout_marginTop="15dp"
+                android:text="Email......"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tvDriverEmailVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl6"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/tvDriverEmail"
+                android:text="Johnson343@icloud.com"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/vl7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tvDriverEmailVal"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimaryDark" />
+
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl7"
+                android:layout_marginTop="15dp"
+                android:text="Phone......"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tvLocVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl7"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/tvLocation"
+                android:text=""
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/vl8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tvLocVal"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <Button
+                android:layout_below="@+id/vl8"
+                android:id="@+id/btn_end_job"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_blue_solid"
+                android:text="Complete your trip"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_below="@+id/btn_end_job"
+                android:id="@+id/btn_dirction"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_blue_solid"
+                android:text="Driver Location"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

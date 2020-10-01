@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/activeTrucksFragments">
+
+    <fragment
+        android:id="@+id/activeTrucksFragments"
+        android:name="com.app.tosstra.fragments.dispacher.ActiveTrucksFragmentsDis"
+        android:label="fragment_active_trucks_fragments"
+        tools:layout="@layout/fragment_active_trucks_fragments" />
+
+    <fragment
+        android:id="@+id/allJobsFragments"
+        android:name="com.app.tosstra.fragments.driver.AllJobsFragment"
+        android:label="all_jobs_fragment"
+        tools:layout="@layout/all_jobs_fragment" />
+    <fragment
+        android:id="@+id/myJobFragments"
+        android:name="com.app.tosstra.fragments.driver.MyJobFragment"
+        android:label="fragment_my_job"
+        tools:layout="@layout/fragment_my_job" />
+    <fragment
+        android:id="@+id/addAnewJobFragments"
+        android:name="com.app.tosstra.fragments.driver.AddANewJobFragment"
+        android:label="add_a_new_job_fragment"
+        tools:layout="@layout/add_a_new_job_fragment" />
+    <fragment
+        android:id="@+id/activerDriverFragments"
+        android:name="com.app.tosstra.fragments.dispacher.ActiverDriverFragments"
+        android:label="fragment_activer_driver_fragments"
+        tools:layout="@layout/fragment_activer_driver_fragments" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.app.tosstra.fragments.common.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.app.tosstra.fragments.common.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.app.tosstra.fragments.common.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+</navigation>

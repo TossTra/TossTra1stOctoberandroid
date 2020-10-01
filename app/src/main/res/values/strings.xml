@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">TossTra</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_search">Map</string>
+    <string name="title_activity_poly">Map</string>
+    <string name="take_photo">Take photo</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="default_notification_channel_id" />
+    <string name="fcm_message">TossTra</string>
+
+    <array name="array_dot_active">
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/view_line</item>
+        <item>@color/view_line</item>
+        <item>@color/view_line</item>
+        <item>@color/view_line</item>
+        <item>@color/view_line</item>
+    </array>
+    <array name="array_dot_inactive2">
+        <item>@color/grey</item>
+        <item>@color/grey</item>
+        <item>@color/grey</item>
+        <item>@color/grey</item>
+        <item>@color/grey</item>
+    </array>
+    <string name="permission_rationale">These permissions are mandatory for the application. Please allow access.</string>
+</resources>

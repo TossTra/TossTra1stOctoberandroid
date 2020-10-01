@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.driver.AddANewJobFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <ImageView
+            android:id="@+id/iv_back_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back"
+            android:backgroundTint="@color/white"
+            android:layout_margin="15dp"/>
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Job Offer"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+
+            <TextView
+                android:id="@+id/tvCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Company name...."
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvCompanyNameVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_toRightOf="@+id/tvCompanyName"
+                android:text="ddddd"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/vl0"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tvCompanyName"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+
+
+            <TextView
+                android:id="@+id/job_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/vl0"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tvRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/job_info"
+                android:layout_marginTop="15dp"
+                android:text="$15 Per hours"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/vl1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tvRate"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:id="@+id/tvPickAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vl1"
+                android:layout_marginTop="15dp"
+                android:text="Pick up Address"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvPickAddval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPickAddress"
+                android:layout_marginTop="15dp"
+                android:text="Street"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/vl2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tvPickAddval"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:id="@+id/tvCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl2"
+                android:layout_marginTop="15dp"
+                android:text="City......"
+                android:visibility="gone"
+                android:textSize="16sp" />
+
+
+            <View
+                android:id="@+id/vl3"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tvCity"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:background="@color/view_line" />
+
+
+            <TextView
+                android:id="@+id/tvState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl3"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:text="State......"
+                android:textSize="16sp" />
+
+
+            <View
+                android:id="@+id/vl5"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:layout_below="@+id/tvState"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvZip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl5"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:text="Zip......"
+                android:textSize="16sp" />
+
+
+            <View
+                android:id="@+id/vl4"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tvZip"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:id="@+id/tvDropAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vl4"
+                android:layout_marginTop="15dp"
+                android:text="Drop Off Address"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvDropAddval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDropAddress"
+                android:layout_marginTop="15dp"
+                android:text="Street...."
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/vl6"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:layout_below="@+id/tvDropAddval"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:id="@+id/tvCityDrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl6"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:text="City......"
+                android:textSize="16sp" />
+
+
+            <View
+                android:id="@+id/vl7"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tvCityDrop"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:background="@color/view_line" />
+
+
+            <TextView
+                android:id="@+id/tvStateDrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl7"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:text="State......"
+                android:textSize="16sp" />
+
+
+            <View
+                android:id="@+id/vl8"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tvStateDrop"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:id="@+id/tvZipDrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl8"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:text="Zip......"
+                android:textSize="16sp" />
+
+
+            <View
+                android:id="@+id/vl9"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:layout_below="@+id/tvZipDrop"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+
+            <LinearLayout
+                android:id="@+id/llm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl9"
+                android:layout_marginTop="15dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDateRange"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Start From 10-july-2020" />
+
+                <TextView
+                    android:id="@+id/tvToRange"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="To 10-jul-2020" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/vl10"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/llm"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llTime"
+                android:layout_below="@+id/vl10"
+                android:layout_marginTop="15dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvStartTime"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Start Time"
+                android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tvEndTime"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="End Time"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/vl11"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/llTime"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:id="@+id/tvAdditionInstruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vl11"
+                android:layout_marginTop="15dp"
+                android:text="Additional Instruction"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_end"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/tvAdditionInstruction"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rect_sq_grey">
+
+                <EditText
+                    android:id="@+id/et_add_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autofillHints=""
+                    android:editable="false"
+                    android:background="@null"
+                    android:paddingVertical="5dp"
+                    android:gravity="top"
+                    android:hint="Additional Instruction ..."
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Location......"
+                android:layout_below="@+id/ll_end"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tvLocVal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_below="@+id/ll_end"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/tvLocation"
+                android:text=""
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:visibility="visible"
+                android:layout_below="@+id/ll_end"
+                android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_reject"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_blue_stroke"
+                android:gravity="center"
+                android:text="Reject"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark" />
+
+                <Button
+                    android:id="@+id/btn_accept"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rounded_blue_solid"
+                    android:gravity="center"
+                    android:text="Accept"
+                    android:layout_marginBottom="30dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

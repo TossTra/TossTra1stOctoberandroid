@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/lvCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:button="@drawable/custom_checkbox" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/lvCheckbox"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_header1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mike"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_header2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blue Transporation"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@mipmap/call_icon" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorPrimaryDark" />
+
+
+</RelativeLayout>

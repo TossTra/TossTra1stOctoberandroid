@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "39257683611",
+    "firebase_url": "https://poetic-nova-283713.firebaseio.com",
+    "project_id": "poetic-nova-283713",
+    "storage_bucket": "poetic-nova-283713.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39257683611:android:e858551f8de8182a59b83e",
+        "android_client_info": {
+          "package_name": "com.app.tosstra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39257683611-0jb5easlgv49bs21ohdcll5v9pe67ku3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.tosstra",
+            "certificate_hash": "9a1012af3fa2d1b718178cc2b244daee8cda4b8a"
+          }
+        },
+        {
+          "client_id": "39257683611-m7vpdbs5qqsfb9kdqpc45liftl5s2lt3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQUUpXpk_onz8WfMX4v-agiX4C_8M3-D0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39257683611-m7vpdbs5qqsfb9kdqpc45liftl5s2lt3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

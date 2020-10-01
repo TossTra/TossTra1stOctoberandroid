@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_top"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginVertical="10dp"
+        android:layout_toRightOf="@+id/lvCheckbox"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_header1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mike"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_header2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blue Transporation"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rounded_blue_solid"
+        android:text="Start"
+        android:layout_marginRight="15dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_top"
+        android:background="@color/colorPrimaryDark" />
+
+
+</RelativeLayout>
